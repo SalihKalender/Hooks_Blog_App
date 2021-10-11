@@ -1,0 +1,157 @@
+:root {
+    --color: #fff;
+    --bgcolor: rgba(0,0,0,.2);
+    --bgcolor2: ;
+    --gradient-purple:  linear-gradient(to right, #493240,#c31432);
+    --gradient-orange: linear-gradient(to right, #c31432, #f5af19);
+    --gradient-green: linear-gradient(to right, #ff0099, #493240); 
+    --gradient-blue: linear-gradient(to right, #12c2e9, #c471ed, #f64f59); 
+    --gradient-mauve: linear-gradient(to right,#f5af19 , #e94057,#8a2387);
+    --gradient-lush: linear-gradient(to right,#8a2387 , #ed213a);
+    --font: 'Poppins', sans-serif;
+    --font2: ;
+}
+nav {
+    color: var(--color);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+    font-family: var(--font);
+}
+
+.nav-list {
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+}
+.nav-item {
+    font-size: 17px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.nav-item:first-child .nav-link {
+    border-bottom-left-radius: 5px;
+}
+.nav-item:last-child .nav-link {
+    border-bottom-right-radius: 5px;
+}
+.nav-link {
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 40px;
+    font-size: 15px;
+    background-color: #414041;
+    position: relative;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i.right {
+    margin-left: 10px;
+    align-self: center;
+}
+i.kurumsal {
+    margin-right: 5px;
+}
+i.ref {
+    position: relative;
+    top: 1px;
+}
+.border-bottom {
+    width: 0;
+    height: 1px;
+    margin: auto;
+    background-color: #fff;
+}
+.nav-link:hover .border-bottom {
+    width: 75%;
+    transition: all .3s;
+}
+.gb-hover:hover {
+    background-image: var(--gradient-blue);
+    transform: scale(1.2);
+    z-index: 100;
+    border-radius: 5px;
+    transition: all .4s;
+}
+.gb-hover:hover .border {
+    display: none;
+}
+.gg-hover:hover {
+    background-image: var(--gradient-green);
+    transform: scale(1.2);
+    z-index: 100;
+    border-radius: 5px;
+    transition: all .4s;
+}
+.gg-hover:hover .border {
+    display: none;
+}
+.go-hover:hover {
+    background-image: var(--gradient-orange);
+    transform: scale(1.2);
+    z-index: 100;
+    border-radius: 5px;
+    transition: all .4s;
+}
+.go-hover:hover .border {
+    display: none;
+}
+.gp-hover:hover {
+    background-image: var(--gradient-purple);
+    transform: scale(1.2);
+    border-radius: 5px;
+    z-index: 100;
+    transition: all .4s;
+}
+.gp-hover:hover .border {
+    display: none;
+}
+.gm-hover:hover {
+    background-image: var(--gradient-mauve);
+    transform: scale(1.2);
+    border-radius: 5px;
+    z-index: 100;
+    transition: all .4s;
+}
+.gm-hover:hover .border {
+    display: none;
+}
+.gl-hover:hover {
+    background-image: var(--gradient-lush);
+    transform: scale(1.2);
+    border-radius: 5px;
+    z-index: 100;
+    transition: all .4s;
+}
+.gl-hover:hover .border {
+    display: none;
+}
+.border {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    margin-top: 5px;
+    height: 3px;
+}
+.gradient-blue {
+    background-image: var(--gradient-blue);
+}
+.gradient-purple {
+    background-image: var(--gradient-purple);
+}
+.gradient-green {
+    background-image: var(--gradient-green);
+}
+.nav-link:hover .border {
+    width: 110%;
+    transition: all .4s;
+}
